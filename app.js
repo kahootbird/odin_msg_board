@@ -3,10 +3,16 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+/*
+const messages = [ { text: "Hi there!", user: "Amando", added: new Date() },
+   { text: "Hello World!",
+      user: "Charles",
+       added: new Date() } ];
+*/
+
 
 
 //Messages to be displayed
-
 
 var indexRouter = require('./routes/index');
 var newRouter = require('./routes/new');

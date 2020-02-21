@@ -3,7 +3,8 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-  res.send('New');
+  //res.send('New');
+    res.render('form');
 });
 
 module.exports = router;
