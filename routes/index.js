@@ -9,9 +9,11 @@ var router = express.Router();
 
 
 /* GET home page. */
+
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'mini msg board', messages:messages});
 });
+
 router.post('/new', function(req, res, next){
   messages.push({
     text: req.body.text,
